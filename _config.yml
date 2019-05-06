@@ -20,11 +20,14 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://lencse.netlify.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: LeventeLoki
-github_username:  Lencse
+github_username: Lencse
+linkedin_username: lokilevente
+author: Lencse
+permalink: pretty
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-clean-blog
+# theme: jekyll-theme-clean-blog
 plugins:
     - jekyll-feed
 
@@ -39,3 +42,7 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+error_mode: strict
+strict_variables: true
+strict_filters: true
