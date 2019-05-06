@@ -23,7 +23,7 @@ twitter_username: LeventeLoki
 github_username: Lencse
 linkedin_username: lokilevente
 author: Lencse
-permalink: pretty
+permalink: /:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown

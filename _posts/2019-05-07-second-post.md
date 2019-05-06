@@ -2,8 +2,11 @@
 layout: post
 title:  "Welcome to Jekyll!"
 date: 2019-05-06 09:12:11 +0200
-categories: jekyll update
+category: jekyll
 background: /assets/img/palvin.jpg
+excerpt: >-
+    This is the excerpt.
+    Really.
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
