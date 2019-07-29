@@ -5,7 +5,7 @@ BIN=$(VENDOR)/.bin
 SITE_DIR=public
 
 $(SITE_DIR): $(VENDOR)
-	$(BIN)/gatsby build
+	yarn run build
 
 $(VENDOR): package.json yarn.lock
 	yarn && touch $(VENDOR)
