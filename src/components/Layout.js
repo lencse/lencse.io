@@ -187,39 +187,39 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Footer = styled.footer`
-  text-align: center;
-  padding: 3rem 1rem;
-  span {
-    font-size: 0.75rem;
-  }
+    text-align: center;
+    padding: 3rem 1rem;
+    span {
+        font-size: 0.75rem;
+    }
 `
 
 const Layout = ({ children, customSEO }) => {
-  const buildTime = useBuildTime()
+    const buildTime = useBuildTime()
 
-  return (
-    <ThemeProvider theme={theme}>
-      <>
-        {!customSEO && <SEO buildTime={buildTime} />}
-        <GlobalStyle />
-        {children}
-        <Footer>
-          &copy; 2019 by LekoArts. All rights reserved. <br />
-          <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
-          <span>Last build: {buildTime}</span>
-        </Footer>
-      </>
-    </ThemeProvider>
-  )
+    return (
+        <ThemeProvider theme={theme}>
+            <>
+                {!customSEO && <SEO buildTime={buildTime} />}
+                <GlobalStyle />
+                {children}
+                <Footer>
+                    &copy; 2019 by LekoArts. All rights reserved. <br />
+                    <a href="https://github.com/LekoArts/gatsby-starter-minimal-blog">GitHub Repository</a> <br />
+                    <span>Last build: {buildTime}</span>
+                </Footer>
+            </>
+        </ThemeProvider>
+    )
 }
 
 export default Layout
 
 Layout.propTypes = {
-  children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
-  customSEO: PropTypes.bool,
+    children: PropTypes.oneOfType([PropTypes.array, PropTypes.node]).isRequired,
+    customSEO: PropTypes.bool,
 }
 
 Layout.defaultProps = {
-  customSEO: false,
+    customSEO: false,
 }
