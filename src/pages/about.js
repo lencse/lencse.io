@@ -61,7 +61,7 @@ const AboutPage = () => (
                         I'm a web developer from Budapest.
                     </p>
                     <p>
-                        <img src='img/profile-pic.jpg' />
+                        <img src='/img/profile-pic.jpg' />
                     </p>
                 </PostContent>
             </Content>
