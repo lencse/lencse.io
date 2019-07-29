@@ -5,6 +5,7 @@ import styled from 'styled-components'
 
 import { Layout, Article, Wrapper, Button, SectionTitle } from '../components'
 
+
 const Content = styled.div`
     grid-column: 2;
     box-shadow: 0 4px 120px rgba(0, 0, 0, 0.1);
@@ -41,54 +42,31 @@ const Hero = styled.div`
     }
 `
 
-const IndexPage = ({
-    data: {
-        allMdx: { nodes: posts },
-    },
+const Error404Page = ({
+    data: {},
 }) => (
     <Layout>
         <Wrapper>
-            <Hero>
-                <h1><Link to='/'>lencse.io</Link></h1>
-                <p>
-                    I'm Levente Löki, a web developer from Budapest.
-                </p>
-                <Link to="/about">
-                    <Button big>
-                        About
-                    </Button>
-                </Link>
-            </Hero>
-            <Content>
-                <SectionTitle>Latest stories</SectionTitle>
-                {posts.map(post => (
-                    <Article
-                        title={post.frontmatter.title}
-                        date={post.frontmatter.date}
-                        excerpt={post.excerpt}
-                        timeToRead={post.timeToRead}
-                        slug={post.fields.slug}
-                        categories={post.frontmatter.categories}
-                        key={post.fields.slug}
-                    />
-                ))}
+        <Hero>
+            <h1><Link to='/'>lencse.io</Link></h1>
+        </Hero>
+        <Content>
+            <SectionTitle>404 Page not found :(</SectionTitle>
+
             </Content>
+
         </Wrapper>
     </Layout>
 )
 
-export default IndexPage
+export default Error404Page
 
-IndexPage.propTypes = {
-    data: PropTypes.shape({
-        allMdx: PropTypes.shape({
-            nodes: PropTypes.array.isRequired,
-        }),
-    }).isRequired,
+Error404Page.propTypes = {
+    data: PropTypes.shape({}).isRequired,
 }
 
-export const IndexQuery = graphql`
-    query IndexQuery {
+export const Error404Query = graphql`
+    query Error404Query {
         allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
             nodes {
                 fields {
