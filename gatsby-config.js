@@ -72,6 +72,6 @@ module.exports = {
         },
         'gatsby-plugin-offline',
         'gatsby-plugin-netlify',
-        'gatsby-plugin-remove-fingerprints'
+        'gatsby-plugin-remove-fingerprints',
     ],
 }

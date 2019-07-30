@@ -17,7 +17,7 @@ module.exports = {
     userTwitter: '@leventeloki', // Twitter Username - Optional
     // ogSiteName: 'minimal', // TODO Facebook Site Name - Optional
     ogLanguage: 'en_US', // Facebook Language
-    googleAnalyticsID: 'UA-133826674-1', // TODO Google Analytics
+    // googleAnalyticsID: 'UA-133826674-1', // TODO enable GA when first post published
 
     // Manifest and Progress color
     // See: https://developers.google.com/web/fundamentals/web-app-manifest/
