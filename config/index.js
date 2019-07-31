@@ -15,7 +15,7 @@ module.exports = {
 
     // siteFBAppID: '123456789', // Facebook App ID - Optional
     userTwitter: '@leventeloki', // Twitter Username - Optional
-    // ogSiteName: 'minimal', // TODO Facebook Site Name - Optional
+    // ogSiteName: 'minimal', // Facebook Site Name - Optional
     ogLanguage: 'en_US', // Facebook Language
     // googleAnalyticsID: 'UA-133826674-1', // TODO enable GA when first post published
 

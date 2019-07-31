@@ -48,7 +48,7 @@ const PostContent = styled.div`
     margin-top: 4rem;
 `
 
-const AboutPage = () => (
+const ProjectsPage = () => (
     <Layout>
         <Wrapper>
             <Header>
@@ -57,25 +57,10 @@ const AboutPage = () => (
             <Content>
                 <Title>Lencse</Title>
                 <PostContent>
+                    <h3>Kéktúra</h3>
                     <p>
-                    I'm a self taught full stack web developer, with more than 10 years of programming experience. I have experience across the full lifecycle of web apps, from meeting with clients to scope requirements, through to database design, both frontend and backend web development, managing server configuration and deployment, and long term code maintenance.
+                        dksjdskjdks
                     </p>
-                    <p>
-                    Here's a few technologies I'm keen about recently:
-                    </p>
-
-                    <ul>
-                        <li>PHP static code analysis tools (Psalm, PHPStan)</li>
-                        <li>Gatsby.JS</li>
-                    </ul>
-                    <ul>
-                        <li>
-                            2010-14 National Instruments
-                            <ul>
-                                <li>Oracle RDBMS</li>
-                            </ul>
-                        </li>
-                    </ul>
                     {/*
                     linkedin, twitter, github
                      */}
@@ -85,4 +70,4 @@ const AboutPage = () => (
     </Layout>
 )
 
-export default AboutPage
+export default ProjectsPage

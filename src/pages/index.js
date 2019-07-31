@@ -58,6 +58,16 @@ const IndexPage = ({
                         About
                     </Button>
                 </Link>
+                <Link to="/projects">
+                    <Button big>
+                        Projects
+                    </Button>
+                </Link>
+                <Link to="/contact">
+                    <Button big>
+                        Contact
+                    </Button>
+                </Link>
             </Hero>
             <Content>
                 <SectionTitle>Latest stories</SectionTitle>
